@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           CartScreen.routeNamed:(context) => CartScreen(),
           OrdersScreen.routeName:(context) => OrdersScreen(),
         },
+        debugShowCheckedModeBanner: false,
       ),
     );
   }

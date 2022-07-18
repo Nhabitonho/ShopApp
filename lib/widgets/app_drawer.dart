@@ -8,6 +8,7 @@ class AppDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
+            backgroundColor: Theme.of(context).primaryColor,
             title: Text('Hello Friend !!'),
             automaticallyImplyLeading: false,
           ),
@@ -24,7 +25,8 @@ class AppDrawer extends StatelessWidget {
             title: Text('Order'),
             leading: Icon(Icons.shop),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed(OrdersScreen.routeName);
+              Navigator.of(context)
+                  .pushReplacementNamed(OrdersScreen.routeName);
             },
           )
         ],
